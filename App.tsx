@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Count from './count';
 import CountButton from './CountButton';
 import DisplayCount from './DisplayCount';
 import Input from './input';
@@ -9,10 +8,11 @@ import './style.css';
 export default function App() {
   return (
     <div>
-      <h1>Hello</h1>
-      <Name />
+      <div className="flex">
+        <h1 className="inline">Hello</h1>
+        <Name />
+      </div>
       <Input />
-      <Count />
       <DisplayCount />
       <CountButton action={'decrement'} />
       <CountButton action={'increment'} />
