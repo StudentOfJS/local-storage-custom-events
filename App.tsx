@@ -13,9 +13,13 @@ export default function App() {
         <Name />
       </div>
       <Input />
-      <DisplayCount />
-      <CountButton action={'decrement'} />
-      <CountButton action={'increment'} />
+      <div className="mt-10">
+        <CountButton action={'decrement'} />
+        <span className="mx-4">
+          <DisplayCount />
+        </span>
+        <CountButton action={'increment'} />
+      </div>
     </div>
   );
 }

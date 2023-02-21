@@ -8,3 +8,12 @@ p {
 .flex {
   display: flex;
 }
+
+.mt-10 {
+  margin-top: 1rem;
+}
+
+.mx-4 {
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}
