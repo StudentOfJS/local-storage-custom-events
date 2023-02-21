@@ -9,7 +9,7 @@ export default function CountButton({
   const [_, updateCount] = useStore<number>('count');
   const handleClick = () => {
     updateCount((count) => {
-      if (action === 'decrement' && count <= 0) return;
+      if (action === 'decrement' && count <= 0) return 0;
       return count + (action === 'increment' ? 1 : -1);
     });
   };
